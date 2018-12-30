@@ -1,7 +1,7 @@
 # Linux-TTY-UTF-8-Patch
 Let TTY of the Linux kernel support UTF-8 (like CJKTTY  
  ## How to use
- ### Chang to you kernel directorg. 
+ ### Chang to you kernel directory. 
 	$pacth -p1 < *you want apply core*
 	$pacth -p1 < *you want apply fonts*
 
