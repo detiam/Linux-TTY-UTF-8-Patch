@@ -4,8 +4,8 @@ Let TTY of the Linux kernel support UTF-8 (like CJKTTY
  ### Chang to you kernel directory. 
 	$pacth -Np1 < *you want apply core*
 	$pacth -Np1 < *you want apply fonts*
-   and recommend enable 8x16 font, utf8 font on 'drivers/video/fbdev/core/fonts_utf8.h' .
-   you can chang it youself.
+   and recommend enable 8x16 font, utf8 font on 'drivers/video/fbdev/core/fonts_utf8.h' .  
+   you can chang it youself, and old font path is on "drivers/video/console/fonts_utf8.h" .
 
   ## About
   I edit it make it can use on linux kernel 4.20.  
