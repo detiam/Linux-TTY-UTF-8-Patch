@@ -1,5 +1,5 @@
 # Linux-TTY-Patch
-Let `/dev/concole` and `/dev/tty*` support ALL UTF-8 charset. 4.20 has change, some languages have some problems, And it also appeared in previous versions. now it only work to display CJK charset.
+Let `/dev/concole` or `/dev/tty*` support ALL UTF-8 charset. 4.20 has change, some languages have some problems, And it also appeared in previous versions. now it only work to display CJK charset.
  ## How To Use
  Change to you kernel source directory, and patch this like ohtar patch.  
 ```
@@ -15,4 +15,4 @@ $pacth -Np1 < *you want apply fonts*
     `drivers/video/console/fonts_utf8.h`  
   
   ## About
-  I edit it make it can use on linux kernel 4.20. And i have't contacted the original author of this patch, this patch is to old. Bat the patch may batter then CJKTTY. It handled separately the wide character from the general character, this make it can custom glyph. CJK font cannot be change yet.
+  I edit it make it can use on linux kernel 4.20. And i have't contacted the original author of this patch, this patch is too old. Bat the patch may batter then CJKTTY. It handled separately the wide character from the general character, this make it can custom glyph. CJK font cannot be change yet.
