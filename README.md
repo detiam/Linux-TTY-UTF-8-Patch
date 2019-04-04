@@ -3,8 +3,8 @@ Let `/dev/concole` or `/dev/tty*` support ALL UTF-8 charset. 4.20 has change, so
  ## How To Use
  Change to you kernel source directory, and patch this like ohtar patch.  
 ```
-$pacth -Np1 < *you want apply core*
-$pacth -Np1 < *you want apply fonts*
+$patch -Np1 < *you want apply core*
+$patch -Np1 < *you want apply fonts*
 ```
   
   In 4.20, you need put font file in fbdev core dir, don't patch up the fonts patch. And you must enable `8x16` font, cjk font is `16x16(8x8 + 8x8)`. If you want ohter languages support, use `man setfont` get info. This may batter then change kernel, and the new patch only affects CJK.  
